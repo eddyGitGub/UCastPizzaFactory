@@ -2,8 +2,8 @@
 {
     public interface IPizzaService
     {
-        Task Initialize();
-        Task MakePizza();
+        Task InitializeAsync();
+        Task MakePizzaAsync();
         Task SaveRecordToFileAsync(string pizza);
     }
 }

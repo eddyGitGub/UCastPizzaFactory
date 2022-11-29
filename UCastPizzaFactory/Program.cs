@@ -22,7 +22,7 @@ if (pizzaService == null)
     //Environment.Exit(Environment.ExitCode);
 }
 
-await pizzaService.Initialize();
-await pizzaService.MakePizza();
+await pizzaService.InitializeAsync();
+await pizzaService.MakePizzaAsync();
 
 

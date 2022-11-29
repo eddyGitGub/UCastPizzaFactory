@@ -32,7 +32,7 @@ public class PizzaService : IPizzaService
             Environment.Exit(0);
         }
     }
-    public async Task Initialize()
+    public async Task InitializeAsync()
     {
         if (File.Exists(_settings.FileName))
         {
@@ -81,7 +81,7 @@ public class PizzaService : IPizzaService
         }
         Console.WriteLine("Done!");
     }
-    public async Task MakePizza()
+    public async Task MakePizzaAsync()
     {
         // Deep Pan, Stuffed Crust, Thin and Crispy
         //“Ham and Mushroom”, “Pepperoni” and “Vegetable”.
